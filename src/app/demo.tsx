@@ -1,21 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import SignSystemMe from "@/components/sign-system-me";
-import { useSearchParams } from "next/navigation";
 
-export default function Demo() {
-  const searchParams = useSearchParams();
-  const defaultText = searchParams.get("t") || "sign\nsystem\nme";
+export default function Demo({ defaultText }: { defaultText: string }) {
   const [text, setText] = useState(defaultText);
-
-  useEffect(() => {
-    const textFromParams = searchParams.get("t");
-    if (textFromParams) {
-      setText(textFromParams);
-    }
-  }, [searchParams]);
 
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const newText = e.target.value.trim();
@@ -27,7 +17,7 @@ export default function Demo() {
   };
 
   return (
-    <>
+    <main className="flex flex-col min-h-svh justify-center items-center overflow-x-hidden">
       <div className="flex flex-col my-auto">
         <SignSystemMe text={text} />
       </div>
@@ -37,6 +27,6 @@ export default function Demo() {
         onChange={handleTextChange}
         rows={3}
       />
-    </>
+    </main>
   );
 }

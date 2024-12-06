@@ -25,10 +25,16 @@ export async function generateMetadata({
   };
 }
 
-export default function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ t: string }>;
+}) {
+  const defaultText = (await searchParams).t || "sign\nsystem\nme";
+
   return (
     <main className="flex flex-col min-h-svh justify-center items-center overflow-x-hidden">
-      <Demo />
+      <Demo defaultText={defaultText} />
     </main>
   );
 }
