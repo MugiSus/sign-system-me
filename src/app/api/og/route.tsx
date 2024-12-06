@@ -1,7 +1,6 @@
 import { ImageResponse } from "next/og";
-// App router includes @vercel/og.
 
-import Asakusa from "./asakusa.svg";
+import SignSystemMe from "@/components/sign-system-me";
 
 export async function GET() {
   return new ImageResponse(
@@ -17,8 +16,7 @@ export async function GET() {
           backgroundColor: "white",
         }}
       >
-        <Asakusa />
-        <div style={{ fontSize: 16 }}>アイネクライネ・オートマチーク</div>
+        <SignSystemMe text={"sign\nsystem\nme"} />
       </div>
     ),
     {
