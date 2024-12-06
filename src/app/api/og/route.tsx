@@ -1,8 +1,11 @@
+import { NextRequest } from "next/server";
 import { ImageResponse } from "next/og";
 
 import SignSystemMe from "@/components/sign-system-me";
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const text = request.nextUrl.searchParams.get("text");
+
   return new ImageResponse(
     (
       <div
@@ -16,7 +19,7 @@ export async function GET() {
           transform: "scale(2)",
         }}
       >
-        <SignSystemMe text={"sign\nsystem\nme"} />
+        <SignSystemMe text={text || "sign\nsystem\nme"} />
       </div>
     ),
     {
