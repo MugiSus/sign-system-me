@@ -2,6 +2,7 @@ import { NextRequest } from "next/server";
 import { ImageResponse } from "next/og";
 
 import SignSystemMe from "@/components/sign-system-me";
+import SignSystemMeLogo from "./sign-system-me-logo.svg";
 
 export async function GET(request: NextRequest) {
   const text = request.nextUrl.searchParams.get("text") || "sign\nsystem\nme";
