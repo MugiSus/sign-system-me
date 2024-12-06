@@ -27,7 +27,7 @@ export default function Demo({ defaultText }: { defaultText: string }) {
         <SignSystemMe text={text} />
       </div>
       <textarea
-        className="absolute bottom-0 font-mono w-full max-w-xs resize-none outline-none text-center bg-transparent text-slate-300 hover:bg-slate-200 hover:text-slate-600 focus:bg-slate-200 focus:text-slate-600 px-4 py-2 rounded-t-xl duration-200"
+        className="absolute bottom-0 font-mono w-full max-w-xs resize-none outline-none text-center bg-transparent text-slate-300 hover:bg-slate-200 hover:text-slate-700 focus:bg-slate-200 focus:text-slate-700 px-4 py-2 rounded-t-xl duration-200"
         defaultValue={text}
         onChange={handleTextChange}
         rows={Math.min(text.split("\n").length, 3)}
