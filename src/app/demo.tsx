@@ -10,9 +10,12 @@ export default function Demo({ defaultText }: { defaultText: string }) {
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const newText = e.target.value.trim();
     setText(newText);
+
     const url = new URL(window.location.href);
+
     if (newText) url.searchParams.set("t", newText);
     else url.searchParams.delete("t");
+
     window.history.replaceState(null, "", url.toString());
   };
 
