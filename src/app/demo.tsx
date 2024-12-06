@@ -31,6 +31,7 @@ export default function Demo({ defaultText }: { defaultText: string }) {
         defaultValue={text}
         onChange={handleTextChange}
         rows={Math.min(text.split("\n").length, 3)}
+        spellCheck="false"
       />
     </main>
   );
