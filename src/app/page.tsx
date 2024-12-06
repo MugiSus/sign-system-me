@@ -20,7 +20,7 @@ export default function Home() {
   const [string, setString] = useState("sign\nsystem\nme");
 
   return (
-    <main className="flex flex-col min-h-svh justify-center items-center">
+    <main className="flex flex-col min-h-svh justify-center items-center overflow-x-hidden">
       <div className="flex flex-col my-auto">
         {string.split("\n").map((line, i) => (
           <div key={i} className="flex">
