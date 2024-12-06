@@ -13,6 +13,7 @@ export async function GET() {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#fcfcfc",
+          transform: "scale(2)",
         }}
       >
         <SignSystemMe text={"sign\nsystem\nme"} />
