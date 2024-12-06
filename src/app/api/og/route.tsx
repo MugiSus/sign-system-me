@@ -10,10 +10,9 @@ export async function GET() {
           height: "100%",
           width: "100%",
           display: "flex",
-          gap: 16,
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "white",
+          backgroundColor: "#fcfcfc",
         }}
       >
         <SignSystemMe text={"sign\nsystem\nme"} />
