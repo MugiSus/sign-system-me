@@ -31,7 +31,7 @@ export async function GET(request: NextRequest) {
           <SignSystemMe text={text} />
         </div>
         <SignSystemMeLogo
-          style={{ position: "absolute", bottom: "0.6rem" }}
+          style={{ position: "absolute", bottom: "1rem", scale: "sale(1.5)" }}
         />
       </div>
     ),
