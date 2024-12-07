@@ -23,7 +23,7 @@ export default {
           "100%": { transform: "translateX(0)" },
         },
         "slide-in-rb": {
-          "0%": { transform: "translateY(2%) translateX(5%)" },
+          "0%": { transform: "translateY(2%) translateX(3%)" },
           "100%": { transform: "translateY(0) translateX(0)" },
         },
         "slide-in-b": {
