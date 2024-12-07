@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import SignSystemMe from "@/components/sign-system-me";
+import SignSystemMeAnim from "@/components/sign-system-me-anim";
 
 export default function Demo({ defaultText }: { defaultText: string }) {
   const [text, setText] = useState(defaultText);
@@ -22,9 +22,9 @@ export default function Demo({ defaultText }: { defaultText: string }) {
   };
 
   return (
-    <main className="flex flex-col min-h-svh justify-center items-center overflow-x-hidden">
+    <main className="flex flex-col min-h-svh justify-center items-center">
       <div className="flex flex-col my-auto">
-        <SignSystemMe text={text} />
+        <SignSystemMeAnim text={text} />
       </div>
       <textarea
         className="absolute bottom-0 font-mono w-full max-w-xs resize-none outline-none text-center bg-transparent text-slate-300 hover:bg-slate-200 hover:text-slate-700 focus:bg-slate-200 focus:text-slate-700 px-4 py-2 rounded-t-lg duration-200"
