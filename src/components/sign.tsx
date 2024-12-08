@@ -41,8 +41,8 @@ export default function Sign({ char }: { char: string }) {
     case "a":
       return <Asakusa className="animate-slide-in-r" />;
     case " ":
-      return <div style={{ width: "4rem" }} />;
+      return <div style={{ width: "64px" }} />;
     default:
-      return <div style={{ width: "4rem" }} />;
+      return <div style={{ width: "64px" }} />;
   }
 }
