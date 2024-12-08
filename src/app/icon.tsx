@@ -2,17 +2,18 @@ import Sign from "@/components/sign";
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
+export const contentType = "image/png";
 
 // Image metadata
 export const size = {
   width: 64,
   height: 64,
 };
-export const contentType = "image/png";
+
+const pool = "gnhtcyznfeais";
 
 // Image generation
 export default function Icon() {
-  const pool = "gnhtcyznfeais";
   const char = pool.charAt(Math.floor(Math.random() * pool.length));
 
   return new ImageResponse(
