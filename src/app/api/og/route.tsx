@@ -21,25 +21,23 @@ export async function GET(request: NextRequest) {
           backgroundColor: "#fcfcfc",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#fcfcfc",
-            transform: "scale(2)",
-          }}
-        >
-          <SignSystemMe text={text} />
-        </div>
         <SignSystemMeLogo
           style={{
             position: "absolute",
             bottom: "1rem",
             scale: "sale(1.5)",
-            zIndex: -999,
           }}
         />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transform: "scale(2)",
+          }}
+        >
+          <SignSystemMe text={text} />
+        </div>
       </div>
     ),
     {
