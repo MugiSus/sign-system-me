@@ -1,13 +1,13 @@
-import Sign from "@/components/sign";
 import { ImageResponse } from "next/og";
+import { NextRequest } from "next/server";
+
+import Sign from "@/components/sign";
 
 export const runtime = "edge";
 
-const pool = "gnhtcyznfeais";
-
 // Image generation
-export async function GET() {
-  const char = pool.charAt(Math.floor(Math.random() * pool.length));
+export async function GET(request: NextRequest) {
+  const char = request.nextUrl.searchParams.get("char") || "m";
 
   return new ImageResponse(
     (
