@@ -32,9 +32,6 @@ export async function GET(request: NextRequest) {
       // config to also set the ImageResponse's width and height.
       width: 64,
       height: 64,
-      headers: {
-        "Cache-Control": "no-store, max-age=0",
-      },
     }
   );
 }
