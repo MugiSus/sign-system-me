@@ -28,7 +28,6 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "white",
         }}
       >
         <Sign char={char} />
@@ -39,6 +38,9 @@ export default function Icon() {
       // For convenience, we can re-use the exported icons size metadata
       // config to also set the ImageResponse's width and height.
       ...size,
+      headers: {
+        "Cache-Control": "no-store, max-age=0",
+      },
     }
   );
 }
