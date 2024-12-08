@@ -13,7 +13,7 @@ export const size = {
 const pool = "gnhtcyznfeais";
 
 // Image generation
-export default function Icon() {
+export async function GET() {
   const char = pool.charAt(Math.floor(Math.random() * pool.length));
 
   return new ImageResponse(
@@ -37,7 +37,8 @@ export default function Icon() {
     {
       // For convenience, we can re-use the exported icons size metadata
       // config to also set the ImageResponse's width and height.
-      ...size,
+      width: 64,
+      height: 64,
       headers: {
         "Cache-Control": "no-store, max-age=0",
       },

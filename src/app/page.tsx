@@ -11,7 +11,10 @@ export async function generateMetadata({
 
   return {
     title: "Sign System Me",
-    description: "❤️ metro signs",
+    description: "❤️ Metro Signs",
+    icons: {
+      icon: "/api/icon",
+    },
     openGraph: {
       images: [
         {
