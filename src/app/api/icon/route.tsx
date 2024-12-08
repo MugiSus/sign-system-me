@@ -2,7 +2,6 @@ import Sign from "@/components/sign";
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const contentType = "image/png";
 
 // Image metadata
 export const size = {
