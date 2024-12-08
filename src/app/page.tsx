@@ -9,7 +9,7 @@ export async function generateMetadata({
   const paramsText = (await searchParams).t || "";
   const encodedText = encodeURIComponent(paramsText);
 
-  const pool = "gnhtcyznfeais";
+  const pool = "gmhtcyznfeais";
   const char = pool.charAt(Math.floor(Math.random() * pool.length));
 
   return {
