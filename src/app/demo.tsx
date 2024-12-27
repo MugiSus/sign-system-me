@@ -22,12 +22,12 @@ export default function Demo({ defaultText }: { defaultText: string }) {
   };
 
   return (
-    <main className="flex flex-col min-h-svh justify-center items-center">
-      <div className="flex flex-col my-auto">
+    <main className="flex min-h-svh flex-col items-center justify-center">
+      <div className="my-auto flex flex-col">
         <SignSystemMeAnim text={text} />
       </div>
       <textarea
-        className="absolute bottom-0 font-mono w-full max-w-xs resize-none outline-none text-center bg-transparent text-slate-300 hover:bg-slate-200 hover:text-slate-700 focus:bg-slate-200 focus:text-slate-700 px-4 py-2 rounded-t-lg duration-200"
+        className="absolute bottom-0 w-full max-w-xs resize-none rounded-t-lg bg-transparent px-4 py-2 text-center font-mono text-slate-300 outline-none duration-200 hover:bg-slate-200 hover:text-slate-700 focus:bg-slate-200 focus:text-slate-700"
         defaultValue={text}
         onChange={handleTextChange}
         rows={Math.min(text.split("\n").length, 3)}

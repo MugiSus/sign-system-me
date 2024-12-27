@@ -39,7 +39,7 @@ export default async function Home({
   const defaultText = (await searchParams).t || "sign\nsystem\nme";
 
   return (
-    <main className="flex flex-col min-h-full justify-center items-center overflow-x-hidden">
+    <main className="flex min-h-full flex-col items-center justify-center overflow-x-hidden">
       <Demo defaultText={defaultText} />
     </main>
   );
