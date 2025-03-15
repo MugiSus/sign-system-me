@@ -9,8 +9,8 @@ export async function generateMetadata({
   const paramsText = (await searchParams).t || "";
   const encodedText = encodeURIComponent(paramsText);
 
-  const pool = "gmhtcyznfeais";
-  const char = pool.charAt(Math.floor(Math.random() * pool.length));
+  const pool = paramsText.match(/[gmhtcyznfeais]/g) ?? "signsystemme".split('');
+  const char = pool[Math.floor(Math.random() * pool.length)];
 
   return {
     title: "Sign System Me",
