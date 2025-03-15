@@ -12,34 +12,34 @@ import Oedo from "./signs/oedo.svg"; // for E
 import Mita from "./signs/mita.svg"; // for I
 import Shinjuku from "./signs/shinjuku.svg"; // for S
 
-export default function Sign({ char }: { char: string }) {
+export default function Sign({ char, isAnimated }: { char: string, isAnimated?: boolean }) {
   switch (char) {
     case "g":
-      return <Ginza className="animate-slide-in-r" />;
+      return <Ginza className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "m":
-      return <Marunouchi className="animate-slide-in-rb" />;
+      return <Marunouchi className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "z":
-      return <Hanzomon className="animate-slide-in-b" />;
+      return <Hanzomon className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "e":
-      return <Oedo className="animate-slide-in-r" />;
+      return <Oedo className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "c":
-      return <Chiyoda className="animate-slide-in-rb" />;
+      return <Chiyoda className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "y":
-      return <Yurakucho className="animate-slide-in-b" />;
+      return <Yurakucho className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "n":
-      return <Namboku className="animate-slide-in-r" />;
+      return <Namboku className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "f":
-      return <Fukutoshin className="animate-slide-in-rb" />;
+      return <Fukutoshin className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "t":
-      return <Tozai className="animate-slide-in-b" />;
+      return <Tozai className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "h":
-      return <Hibiya className="animate-slide-in-r" />;
+      return <Hibiya className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "i":
-      return <Mita className="animate-slide-in-rb" />;
+      return <Mita className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "s":
-      return <Shinjuku className="animate-slide-in-b" />;
+      return <Shinjuku className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "a":
-      return <Asakusa className="animate-slide-in-r" />;
+      return <Asakusa className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case " ":
       return <div style={{ width: "64px" }} />;
     default:
