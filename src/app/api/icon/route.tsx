@@ -3,8 +3,6 @@ import { NextRequest } from "next/server";
 
 import Sign from "@/components/sign";
 
-export const runtime = "edge";
-
 // Image generation
 export async function GET(request: NextRequest) {
   const char = request.nextUrl.searchParams.get("char") || "m";
