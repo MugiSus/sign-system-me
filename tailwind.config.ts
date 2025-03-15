@@ -19,16 +19,8 @@ export default {
       },
       keyframes: {
         "slide-in-r": {
-          "0%": { transform: "translateX(5%)" },
-          "100%": { transform: "translateX(0)" },
-        },
-        "slide-in-rb": {
-          "0%": { transform: "translateY(2%) translateX(3%)" },
-          "100%": { transform: "translateY(0) translateX(0)" },
-        },
-        "slide-in-b": {
-          "0%": { transform: "translateY(5%)" },
-          "100%": { transform: "translateY(0)" },
+          "0%": { transform: "translateX(8s%) scale(101%)" },
+          "100%": { transform: "translateX(0) scale(100%)" },
         },
       },
     },
