@@ -1,45 +1,45 @@
-import Ginza from "./signs/ginza.svg"; // for G
-import Marunouchi from "./signs/marunouchi.svg"; // for M
-import Hibiya from "./signs/hibiya.svg"; // for H
-import Tozai from "./signs/tozai.svg"; // for T
-import Chiyoda from "./signs/chiyoda.svg"; // for C
-import Yurakucho from "./signs/yurakucho.svg"; // for Y
-import Hanzomon from "./signs/hanzomon.svg"; // for Z
-import Namboku from "./signs/namboku.svg"; // for N
-import Fukutoshin from "./signs/fukutoshin.svg"; // for F
-import Asakusa from "./signs/asakusa.svg"; // for A
-import Oedo from "./signs/oedo.svg"; // for E
-import Mita from "./signs/mita.svg"; // for I
-import Shinjuku from "./signs/shinjuku.svg"; // for S
+import SignGinza from "./signs/ginza.svg"; // for G
+import SignMarunouchi from "./signs/marunouchi.svg"; // for M
+import SignHibiya from "./signs/hibiya.svg"; // for H
+import SignTozai from "./signs/tozai.svg"; // for T
+import SignChiyoda from "./signs/chiyoda.svg"; // for C
+import SignYurakucho from "./signs/yurakucho.svg"; // for Y
+import SignHanzomon from "./signs/hanzomon.svg"; // for Z
+import SignNamboku from "./signs/namboku.svg"; // for N
+import SignFukutoshin from "./signs/fukutoshin.svg"; // for F
+import SignAsakusa from "./signs/asakusa.svg"; // for A
+import SignOedo from "./signs/oedo.svg"; // for E
+import SignMita from "./signs/mita.svg"; // for I
+import SignShinjuku from "./signs/shinjuku.svg"; // for S
 
 export default function Sign({ char, isAnimated }: { char: string, isAnimated?: boolean }) {
   switch (char) {
     case "g":
-      return <Ginza className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignGinza className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "m":
-      return <Marunouchi className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignMarunouchi className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "z":
-      return <Hanzomon className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignHanzomon className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "e":
-      return <Oedo className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignOedo className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "c":
-      return <Chiyoda className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignChiyoda className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "y":
-      return <Yurakucho className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignYurakucho className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "n":
-      return <Namboku className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignNamboku className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "f":
-      return <Fukutoshin className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignFukutoshin className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "t":
-      return <Tozai className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignTozai className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "h":
-      return <Hibiya className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignHibiya className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "i":
-      return <Mita className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignMita className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "s":
-      return <Shinjuku className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignShinjuku className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case "a":
-      return <Asakusa className={`${isAnimated && 'animate-slide-in-r'}`} />;
+      return <SignAsakusa className={`${isAnimated && 'animate-slide-in-r'}`} />;
     case " ":
       return <div style={{ width: "64px" }} />;
     default:
