@@ -27,8 +27,8 @@ export default function Demo({ defaultText }: { defaultText: string }) {
         <SignSystemMe text={text} isAnimated />
       </div>
       <textarea
-        className={`absolute bottom-0 m-2 w-full max-w-xs resize-none rounded-lg bg-transparent px-4 py-2 text-center font-mono text-slate-300 outline-none duration-200 hover:bg-slate-200 hover:text-slate-700 focus:bg-slate-200 focus:text-slate-700 ${
-          !text.trim() && 'bg-slate-200/50'
+        className={`absolute bottom-0 m-2 w-full max-w-xs resize-none rounded-lg px-4 py-2 text-center font-mono text-slate-300 outline-none duration-200 hover:bg-slate-200 hover:text-slate-700 focus:bg-slate-200 focus:text-slate-700 ${
+          !text.trim() ? 'bg-slate-200/60' : 'bg-transparent'
         }`}
         defaultValue={text}
         onChange={handleTextChange}
