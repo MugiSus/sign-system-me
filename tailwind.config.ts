@@ -19,7 +19,7 @@ export default {
       },
       keyframes: {
         "slide-in-r": {
-          "0%": { transform: "translateX(8s%) scale(101%)" },
+          "0%": { transform: "translateX(5%) scale(101%)" },
           "100%": { transform: "translateX(0) scale(100%)" },
         },
       },
